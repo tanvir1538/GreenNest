@@ -19,7 +19,7 @@ const PlantDetails = () => {
     const [submitting, setSubmitting] = useState(false);
 
     useEffect(() => {
-        fetch('/plants.json')
+        fetch('/plants-data.json')
             .then((res) => res.json())
             .then((data) => {
                 const found = data.find((p) => String(p.plantId) === String(id));

@@ -11,7 +11,7 @@ const Plants = () => {
     const [sortBy, setSortBy] = useState('default');
 
     useEffect(() => {
-        fetch('/plants.json')
+        fetch('/plants-data.json')
             .then((res) => {
                 if (!res.ok) throw new Error('Failed to load plants');
                 return res.json();

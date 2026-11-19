@@ -14,7 +14,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/plants.json')
+        fetch('/plants-data.json')
             .then((res) => {
                 if (!res.ok) throw new Error('Failed to load plant data');
                 return res.json();
